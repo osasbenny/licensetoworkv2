@@ -58,22 +58,22 @@ export default function Pillars() {
               onMouseEnter={() => setHoveredPillar(index)}
               onMouseLeave={() => setHoveredPillar(null)}
             >
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 h-full border-2 border-transparent hover:border-blue-300 transition-all duration-300 hover:scale-105">
-                <div className="text-blue-900 mb-4 flex justify-center">
+              <div className="bg-blue-900 rounded-xl p-6 h-full border-2 border-transparent hover:border-blue-700 transition-all duration-300 hover:scale-105">
+                <div className="text-white mb-4 flex justify-center">
                   {pillar.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 text-center">
+                <h3 className="text-xl font-bold text-white mb-3 text-center">
                   {pillar.title}
                 </h3>
-                <p className="text-gray-600 text-center text-sm leading-relaxed">
+                <p className="text-blue-100 text-center text-sm leading-relaxed">
                   {pillar.description}
                 </p>
               </div>
 
               {/* Hover tooltip */}
               {hoveredPillar === index && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-blue-900 text-white p-4 rounded-lg shadow-xl z-10 w-64">
-                  <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-900 rotate-45"></div>
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-4 bg-gray-900 text-white p-4 rounded-lg shadow-xl z-10 w-64">
+                  <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gray-900 rotate-45"></div>
                   <p className="text-sm leading-relaxed">
                     {pillar.details}
                   </p>
