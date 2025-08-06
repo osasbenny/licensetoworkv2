@@ -12,12 +12,16 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-xl font-bold">
-              License To Work<span className="text-red-600 text-lg">™</span>
-            </h1>
-            <span className="ml-2 text-sm text-blue-200 hidden sm:inline">
-              Graduate Employability Programme
-            </span>
+            <div className="flex items-center">
+              <img 
+                src="/license-to-work-logo.jpeg" 
+                alt="License To Work™" 
+                className="h-10 w-auto mr-3 bg-transparent mix-blend-multiply"
+              />
+              <span className="text-sm text-blue-200 hidden sm:inline">
+                Graduate Employability Programme
+              </span>
+            </div>
           </div>
           
           <nav className="hidden md:flex space-x-8">
