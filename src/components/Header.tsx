@@ -16,7 +16,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
               <img 
                 src="/license-to-work-logo.jpeg" 
                 alt="License To Work™" 
-                className="h-10 w-auto mr-3 bg-transparent mix-blend-multiply"
+                className="h-16 w-auto mr-4 bg-white rounded-lg p-2 shadow-md"
               />
               <span className="text-sm text-blue-200 hidden sm:inline">
                 Graduate Employability Programme
