@@ -18,8 +18,29 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Contact form submitted:', formData);
-    // Handle form submission
+    
+    // Create email body with form data
+    const emailBody = `
+CONTACT FORM SUBMISSION - LICENSE TO WORK™
+
+From: ${formData.name}
+Email: ${formData.email}
+Subject: ${formData.subject}
+
+Message:
+${formData.message}
+
+---
+This message was sent through the License To Work™ website contact form.
+    `.trim();
+
+    // Create mailto link
+    const subject = encodeURIComponent(`Contact Form: ${formData.subject}`);
+    const body = encodeURIComponent(emailBody);
+    const mailtoLink = `mailto:info@chevwellconsulting.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -69,9 +90,7 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Office</h4>
                   <p className="text-gray-600">
-                    123 Career Development Street<br />
-                    Victoria Island, Lagos<br />
-                    Nigeria
+                    Lagos, Nigeria
                   </p>
                 </div>
               </div>

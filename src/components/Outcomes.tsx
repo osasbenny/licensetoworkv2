@@ -52,17 +52,17 @@ export default function Outcomes() {
           {outcomes.map((outcome, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-600"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-blue-600 hover:border-l-8 hover:scale-105 group cursor-pointer"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                <div className="bg-blue-100 text-blue-600 p-2 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 group-hover:scale-110">
                   {outcome.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
                   {outcome.title}
                 </h3>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
                 {outcome.description}
               </p>
             </div>
@@ -82,14 +82,14 @@ export default function Outcomes() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">95%</div>
-              <div className="text-gray-600 font-medium">Employment Rate</div>
-              <div className="text-sm text-gray-500 mt-1">Within 6 months</div>
+              <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">20%</div>
+              <div className="text-gray-600 font-medium">Employment Placement</div>
+              <div className="text-sm text-gray-500 mt-1">1-month post graduation</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-red-600 mb-2">85%</div>
-              <div className="text-gray-600 font-medium">Salary Increase</div>
-              <div className="text-sm text-gray-500 mt-1">Average improvement</div>
+              <div className="text-4xl lg:text-5xl font-bold text-red-600 mb-2">75%</div>
+              <div className="text-gray-600 font-medium">Faster Career Progression</div>
+              <div className="text-sm text-gray-500 mt-1">with Enhanced Compensation</div>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">500+</div>
@@ -97,9 +97,9 @@ export default function Outcomes() {
               <div className="text-sm text-gray-500 mt-1">Successfully placed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl lg:text-5xl font-bold text-red-600 mb-2">98%</div>
-              <div className="text-gray-600 font-medium">Satisfaction</div>
-              <div className="text-sm text-gray-500 mt-1">Employer feedback</div>
+              <div className="text-4xl lg:text-5xl font-bold text-red-600 mb-2">80%</div>
+              <div className="text-gray-600 font-medium">Satisfaction Rate</div>
+              <div className="text-sm text-gray-500 mt-1">by Employers</div>
             </div>
           </div>
         </div>

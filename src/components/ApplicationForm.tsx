@@ -23,8 +23,39 @@ export default function ApplicationForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
+    
+    // Create email body with form data
+    const emailBody = `
+APPLICATION FOR LICENSE TO WORK™ PROGRAMME
+
+PERSONAL INFORMATION:
+Full Name: ${formData.fullName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+LinkedIn Profile: ${formData.linkedinProfile}
+
+EDUCATION:
+University: ${formData.university}
+Course of Study: ${formData.course}
+Graduation Year: ${formData.graduationYear}
+
+CAREER INFORMATION:
+Career Interest: ${formData.careerInterest}
+
+MOTIVATION:
+${formData.motivation}
+
+---
+This application was submitted through the License To Work™ website.
+    `.trim();
+
+    // Create mailto link
+    const subject = encodeURIComponent('New Application - License To Work™ Programme');
+    const body = encodeURIComponent(emailBody);
+    const mailtoLink = `mailto:info@chevwellconsulting.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoLink;
   };
 
   return (

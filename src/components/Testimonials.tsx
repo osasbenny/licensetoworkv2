@@ -76,9 +76,9 @@ export default function Testimonials() {
               Be part of the next generation of workplace-ready professionals. 
               Your success story starts with License To Work<span className="text-red-400">™</span>.
             </p>
-            <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+            <a href="#apply" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-block">
               Apply Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

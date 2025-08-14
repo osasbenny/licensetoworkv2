@@ -42,15 +42,15 @@ export default function About() {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+              className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-300 hover:scale-105 group cursor-pointer"
             >
-              <div className="text-blue-900 mb-4">
+              <div className="text-blue-900 mb-4 group-hover:text-blue-600 transition-colors group-hover:scale-110 transform duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors">
                 {feature.description}
               </p>
             </div>
