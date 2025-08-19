@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function Partners() {
   const partners = [
-    { name: "NYSC", logo: "🏛️" },
-    { name: "NECA", logo: "🏢" },
-    { name: "ITF", logo: "🎓" },
-    { name: "MTN Foundation", logo: "📱" },
-    { name: "British Council", logo: "🇬🇧" },
-    { name: "UN-SDG 8", logo: "🌍" }
+    { name: "NYSC", logo: "/NYSC.jpeg" },
+    { name: "NECA", logo: "/NECA.jpeg" },
+    { name: "ITF", logo: "/ITF.jpeg" },
+    { name: "MTN Foundation", logo: "/MTN-Foundation.jpeg" },
+    { name: "British Council", logo: "/British0-Council.jpeg" },
+    { name: "UN-SDG 8", logo: "/UN-SDG.jpeg" }
   ];
 
   return (
@@ -26,9 +26,13 @@ export default function Partners() {
           {partners.map((partner, index) => (
             <div 
               key={index}
-              className="flex flex-col items-center p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
+              className="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
             >
-              <div className="text-4xl mb-3">{partner.logo}</div>
+              <img 
+                src={partner.logo} 
+                alt={partner.name}
+                className="w-16 h-16 object-contain mb-3"
+              />
               <div className="text-sm font-semibold text-gray-700 text-center">
                 {partner.name}
               </div>

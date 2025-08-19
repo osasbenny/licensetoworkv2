@@ -14,12 +14,12 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
           <div className="flex items-center">
             <div className="flex items-center">
               <img 
-                src="/license-to-work-logo.jpeg" 
+                src="/LTW SVG ICON BLUE.svg" 
                 alt="License To Work™" 
-                className="h-24 w-auto mr-4 rounded-lg p-1 shadow-lg opacity-90 hover:opacity-100 transition-opacity"
+                className="h-20 w-auto mr-4 bg-white rounded-lg p-2"
               />
               <div>
-                <h1 className="text-2xl font-bold text-white">License To Work™</h1>
+                <h1 className="text-2xl font-bold text-white">License To Work<span className="text-red-500">™</span></h1>
                 <span className="text-sm text-blue-200 block">
                   Graduate Employability Programme
                 </span>
