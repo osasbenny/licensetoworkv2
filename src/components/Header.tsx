@@ -16,7 +16,7 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
               <img 
                 src="/lta icon.png" 
                 alt="License To Work™" 
-                className="h-16 w-16 mr-4 bg-transparent"
+                className="h-16 w-16 mr-4 bg-white rounded-lg p-2"
               />
               <div>
                 <h1 className="text-2xl font-bold text-white">License To Work<span className="text-red-500">™</span></h1>
