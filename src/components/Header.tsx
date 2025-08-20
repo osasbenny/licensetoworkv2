@@ -14,9 +14,9 @@ export default function Header({ mobileMenuOpen, setMobileMenuOpen }: HeaderProp
           <div className="flex items-center">
             <div className="flex items-center">
               <img 
-                src="/LTW SVG ICON BLUE.svg" 
+                src="/lta icon.png" 
                 alt="License To Work™" 
-                className="h-20 w-auto mr-4 bg-white rounded-lg p-2"
+                className="h-16 w-16 mr-4 bg-transparent"
               />
               <div>
                 <h1 className="text-2xl font-bold text-white">License To Work<span className="text-red-500">™</span></h1>
